@@ -1,0 +1,81 @@
+/* .wrapper {
+    height: 100vh;
+    
+   display: grid;
+    place-items: center;
+  } */
+
+  
+
+
+
+
+
+
+
+  
+ /* .typing-demo {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    animation: typing-animation 10s infinite;
+  }*/
+  /* .new-animation {
+    animation: reverse-typing 5s steps(22), blink 10s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  } */
+  
+
+
+
+
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 13ch; }
+  }
+
+  @keyframes blink {
+    from, to { border-color: transparent; }
+    0% { border-color: rgb(255, 255, 255); }
+  }
+
+  @keyframes reverse-typing {
+    from { width: 13ch; }
+    to { width: 0; }
+  }
+
+  /* Apply the animations to the typing-demo element */
+  .typing-demo {
+    width: 10ch;
+    animation: typing 5s steps(13), blink 10s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    color: white;
+    margin-left: 38.5%;
+  }
+
+  .reverse-typing-demo {
+    width: 0;
+    animation: reverse-typing 5s steps(13), blink 10s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    color: white;
+    margin-left: 38.5%;
+  }
+  @media (max-width: 576px){
+    .reverse-typing-demo {
+      margin-left: 5.5%;
+    }
+    .typing-demo {
+      margin-left: 5.5%;
+    }
+  }
